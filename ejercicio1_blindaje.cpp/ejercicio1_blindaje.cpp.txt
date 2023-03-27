@@ -1,0 +1,179 @@
+Ejercicios: Homework 3
+Ejercicio 1
+
+Entrada: red green blue red
+Salida:Enter the house 1
+
+Entrada:White blue y yellow
+Salida:Enter the house 2
+
+Entrada:red green blue black
+Salida: Seek somewhere else
+
+Entrada:Is in the green
+Salida:Enter the house 3
+
+Ejercicio 2
+Entrada:123
+Salida:7 
+
+Entrada:4 5 9
+Salida:Error. The sum of 4 and 5 is 8
+
+Entrada:-4 3 -5
+Salida:2
+
+Entrada:7 -6 4
+Salida:Error. The sum of 7 and -6 -4
+
+Ejercicio 3
+#include <iostream>
+using namespace std;
+int main() {
+int n;
+cin >> n;
+int sum = 0;
+int i = 1;
+while (i <= n) {
+sum += i;
+1+n+i; 
+}
+cout << sum << endl;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+int a, b;
+cin >> a >> b;
+while(a + b)  
+while (b != 0) {
+int c = b;
+b = a % b;
+a = c;
+}
+cout << a << endl;
+
+Ejercicio 4
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int a = 5;
+int b;
+do {
+cout << "1: "s << endl;
+cin >> b;
+} while (a = b);
+cout << "5!"s << endl;
+}
+
+
+cout << "Guess the number: "s << endl;
+cin >> b;
+} while (a = b);
+cout << "You are right!"s << endl;
+}
+
+
+
+Ejercicio 5
+Entrada 
+
+0 7
+Salida 
+0
+1
+2
+3
+4
+5
+6
+7
+
+
+
+Ejercicio 6
+Entrada
+-2 3
+Salida:
+-2
+0
+1
+2
+3
+
+
+Ejercicio 7
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+string query;
+getline(cin, query);
+// 5678
+}
+
+
+
+Ejercicio 8
+[red]
+[parrot]
+
+
+
+
+
+Ejercicio 9
+#include <iostream>
+using namespace std;
+int main() {
+cout <<  Escriba un ciclo for, que realice 10 idas a la heladera
+// Si la torta no se encuentra escriba el siguiente texto:
+cout << "No cake :(" << endl;
+// Pero si se encuentra, entonces:
+cout << "Om-nom-nom :P" << endl;
+
+Entrada
+2 2 2 2 2 2 2 2 2 2 2 2 2 2
+Salida
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+m-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Entrada
+2 2 20 0 0 0 0 2 2
+Salida
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+cake :)
+Entrada 
+2
+Salida
+cake :)
+
+
+Ejercicio 10 
+
+No le entendi muy bien a la explicacion 
+
+
+
+Ejercicio 11
+No le entendi muy bien a la explicacion 
+
+
+
+
+Ejercicio 12
+No le entendi muy bien a la explicacion 
