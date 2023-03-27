@@ -1,264 +1,179 @@
-Ejercicios: Homework 2
+Ejercicios: Homework 3
 Ejercicio 1
-#include <iostream>
 
-using namespace std;
+Entrada: red green blue red
+Salida:Enter the house 1
 
-int main()
-{
-    cout<<"56.70 + 10 ";
+Entrada:White blue y yellow
+Salida:Enter the house 2
 
-    return 0;
-}
+Entrada:red green blue black
+Salida: Seek somewhere else
+
+Entrada:Is in the green
+Salida:Enter the house 3
 
 Ejercicio 2
-#include <iostream>
+Entrada:123
+Salida:7 
 
-using namespace std;
+Entrada:4 5 9
+Salida:Error. The sum of 4 and 5 is 8
 
-int main()
-{
-    cout<<"56 + 1.0 ";
-    cout<<"23 + 6.0 ";
-    return 0;
-}
+Entrada:-4 3 -5
+Salida:2
+
+Entrada:7 -6 4
+Salida:Error. The sum of 7 and -6 -4
 
 Ejercicio 3
 #include <iostream>
-
 using namespace std;
-
-int main()
-{
-    "int width  height";
-    cout<<"(b*h)/2";
-    cout <<"(width)";
-   return 0;
+int main() {
+int n;
+cin >> n;
+int sum = 0;
+int i = 1;
+while (i <= n) {
+sum += i;
+1+n+i; 
 }
-AreadeTriangulo 
-    //Nombre del programa:Area de Triangulo FC Ver. 1.0
-    //Descripcion:  Calcular el Área de un Triangulo
-    //Creado por :
-    Escribir "Teclea la longitud de la basem del triangulo"
-    Leer b
-    Escribir "Teclea la longitud  de la altura" 
-    Leer h 
-    area <- (b*h)/2
-    Escribir "El resultado de la sumna es:´,area "
-    
-    FinAlgoritmo
+cout << sum << endl;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+int a, b;
+cin >> a >> b;
+while(a + b)  
+while (b != 0) {
+int c = b;
+b = a % b;
+a = c;
+}
+cout << a << endl;
+
 Ejercicio 4
 #include <iostream>
-
-using namespace std; 
-
-int ma(){
-    int x;
-    cin >>"x y";
-    
-    z=1;
-    cout<<"x + e + y + e";
-}
-    cout < "x + y + z";
-    return 0;
-Ejercicio 5
-
-
-#include <iostream>
-
+#include <string>
 using namespace std;
-
-int main()
-{
-    int >> "x" >> "y";
-    cin >> "x"  >> "y";
-    cout << "x ">> "y";
-
-    
+int main() {
+int a = 5;
+int b;
+do {
+cout << "1: "s << endl;
+cin >> b;
+} while (a = b);
+cout << "5!"s << endl;
 }
+
+
+cout << "Guess the number: "s << endl;
+cin >> b;
+} while (a = b);
+cout << "You are right!"s << endl;
+}
+
+
+
+Ejercicio 5
+Entrada 
+
+0 7
+Salida 
+0
+1
+2
+3
+4
+5
+6
+7
+
+
+
 Ejercicio 6
-Escriba un programa que lea el nombre de una persona en el siguiente formato:
-Apellido, Nombre_de_pila, inicial_intermedia
+Entrada
+-2 3
+Salida:
+-2
+0
+1
+2
+3
 
-la entrada:
-
-<Nombre>           <Apellido> 
-< Daniel Fabricio> <Salvatierra>
-
-Deberá producir la salida:
-
-<Apellido>     <Nombre> 
-<Salvatierra>, <Fabricio D.>
-
-La entrada
-
-<Fabricio D.> <Salvatierra> 
-
-Deberá producir la salida:
-
-<Salvatierra> <Fabricio D.>
-
-El programa deberá funcionar igual y colocar un punto después de la inicial intermedia,
-aunque la entrada no contenga el punto. El programa deberá contemplar usuarios que no
-den un nombre intermedio o inicial. En tal caso, claro, la salida no contendrá una inicial
-intermedia. Por ejemplo, la entrada,
-
-Fabricio  Salvatierra
-
-Deberá producir la salida:
-
-Salvatierra, Fabricio 
 
 Ejercicio 7
-Entrada
-
-Tobey Vincent  Maguire 
-El hombre araña 
-Dwayne Johnson Jumanji: 
-el siguiente nivel
-
-Salida 
-Dwayne Douglas Johnson Jumanji: 
-el siguiente nivel 
-Tobey Maguire 
-El hombre araña  
-
-Entrada 
 #include <iostream>
-
+#include <string>
 using namespace std;
-{
-
-    string name;
-    string surname;
-    cout << "Tobey:"s << endl;
-    cin >> Tobey >> Maguire; 
-    cout << "Hello, "s << Tobey << " Vincent "s << Maguire << endl;
-
-    return 0;
+int main() {
+string query;
+getline(cin, query);
+// 5678
 }
-Salida 
 
-#include <iostream>
 
-using namespace std;
-{
-    string full_name, address;(Dwayne Douglas Johnson California, States)
-    getline(cin, Dwayne Douglas Johnson);
-    getline(cin, California, States);
-    cout << "Hello, "s << Dwayne Douglas Johnson << " de "s << California, Statess << endl;
-
-    return 0;
-}
 
 Ejercicio 8
+[red]
+[parrot]
+
 
 
 
 
 Ejercicio 9
-Entrada: apple banana cat dog eleven
-Salida: azxdj
-Entrada: a s d f h
-Salida: asdfg
-Entrada: 1 two 3 five 6
+#include <iostream>
+using namespace std;
+int main() {
+cout <<  Escriba un ciclo for, que realice 10 idas a la heladera
+// Si la torta no se encuentra escriba el siguiente texto:
+cout << "No cake :(" << endl;
+// Pero si se encuentra, entonces:
+cout << "Om-nom-nom :P" << endl;
+
+Entrada
+2 2 2 2 2 2 2 2 2 2 2 2 2 2
 Salida
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+m-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+Entrada
+2 2 20 0 0 0 0 2 2
+Salida
+Om-nom-nom :P
+Om-nom-nom :P
+Om-nom-nom :P
+cake :)
+Entrada 
+2
+Salida
+cake :)
 
 
+Ejercicio 10 
 
-Ejercicio 10
-Formato de entrada: 1
-Formato de salida: 3 documentos encontrados
+No le entendi muy bien a la explicacion 
+
+
 
 Ejercicio 11
-Entrada:2
+No le entendi muy bien a la explicacion 
 
-Salida:Esto no es de fibonacci
 
-Entrada:1233
 
-Salida:Esto no es de Fibonacci
-
-Entrada: 11225512
-
-Salida:Se encontró Fibonacci 
-
-Entrada:13234512
-
-Salida:Esto no es de Fibonacci
 
 Ejercicio 12
-Entrada:200 220 120 410
-
-Salida:200
-
-Entrada:115 123 154 570
-
-Salida:110.27
-
-Entrada:150 120 130 5 12.5
-
-Salida:132.25
-
-Ejercicio 13
-Entrada:0
-
-Salida:No se encontraron documento
-
-Entrada:2
-
-Salida:Se encontró un documento 
-
-Entrada:3
-
-Salida:2 documento encontrados
-
-NO entendi muy bien la 14 y 15 y 16
-
-
-
-
-Ejercicio 14
-
-
-
-
-
-Ejercicio 15
-
-
-
-
-
-
-
-Ejercicio 16
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+No le entendi muy bien a la explicacion 
