@@ -1,0 +1,276 @@
+Ejercicio 1#include <iostream>
+using namespace std;
+int main()
+{
+# leer los cuatro colores
+color1, color2, color3, color_fluffy = input().split()
+
+# verificar si el color de Fluffy está en una de las tres casas
+if color_fluffy == color1:
+    print("Enter the house 1")
+elif color_fluffy == color2:
+    print("Enter the house 2")
+elif color_fluffy == color3:
+    print("Enter the house 3")
+else:
+    print("Seek somewhere else")
+   return 0;
+}
+
+
+Ejercicio 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+<entero1> <entero2> <entero3>
+La salida del programa
+ return 0;
+}
+
+Ejercicio 3
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+# Leer los tamaños de las mitades
+tamano1 = float(input("Ingrese el tamaño de la primera mitad de la naranja: "))
+tamano2 = float(input("Ingrese el tamaño de la segunda mitad de la naranja: "))
+
+# Comparar los tamaños de las mitades
+if tamano1 == tamano2:
+    print("La naranja se divide en dos partes iguales")
+elif tamano1 > tamano2:
+    diferencia = tamano1 - tamano2
+    print("Cortar", diferencia, "de la primera parte")
+else:
+    diferencia = tamano2 - tamano1
+    print("Cortar", diferencia, "de la segunda parte")
+  return 0;
+}
+
+Ejercicio 4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+while input("Guess the number: ") != 5:
+    print("Try again")
+print("You are right!")
+return 0;
+}
+
+Ejercicio 5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+start = int(input("Ingrese el primer número: "))
+end = int(input("Ingrese el segundo número: "))
+
+for num in range(start, end+1):
+    print(num)
+ return 0;
+}
+
+Ejercicio 6
+#include <iostream>
+using namespace std;
+
+int main()
+{
+start = int(input("Ingrese el primer número: "))
+end = int(input("Ingrese el segundo número: "))
+
+if start <= end:
+    for num in range(start, end+1):
+        if num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz")
+        elif num % 3 == 0:
+            print("Fizz")
+        elif num % 5 == 0:
+            print("Buzz")
+        else:
+            print(num)
+else:
+    for num in range(start, end-1, -1):
+        if num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz")
+        elif num % 3 == 0:
+            print("Fizz")
+        elif num % 5 == 0:
+            print("Buzz")
+        else:
+            print(num)
+ return 0;
+}
+
+
+Ejercicio 7
+#include <iostream>
+using namespace std;
+
+int main()
+{
+line = input()  # leer la línea de entrada
+last_char_index = -1  # inicializar el índice del último carácter
+
+for i, char in enumerate(line):
+    if char == ' ':
+        # encontramos un espacio, imprimimos el índice del último carácter de la palabra anterior
+        print(last_char_index)
+        last_char_index = -1  # reiniciar el índice del último carácter
+    else:
+        last_char_index = i  # actualizar el índice del último carácter
+
+# imprimir el índice del último carácter de la última palabra
+print(last_char_index)
+Esta es una prueba
+3
+6
+8
+14
+return 0;
+}
+Ejercicio 8#include <iostream>
+using namespace std;
+
+int main()
+{
+# Leer la línea desde la entrada estándar
+line = input()
+
+# Inicializar la variable de la palabra actual
+word = ""
+
+# Iterar por cada carácter en la línea
+for i in range(len(line)):
+    # Si el carácter actual no es un espacio, agregarlo a la palabra actual
+    if line[i] != " ":
+        word += line[i]
+    # Si el carácter actual es un espacio, imprimir la palabra anterior entre corchetes
+    # y reiniciar la variable de la palabra actual
+    else:
+        print("[{}]".format(word), end="")
+        word = ""
+
+# Imprimir la última palabra, ya que no habrá más espacios después de ella
+print("[{}]".format(word), end="")
+eturn 0;
+}
+
+
+Ejercicio 9
+#include <iostream>
+using namespace std;
+
+int main()
+{
+pastel = True
+for i in range(10):
+    cin = int(input("Ingrese el valor de cin: "))
+    if cin == 1 and pastel:
+        print("Om-nom-nom :P")
+        pastel = False
+    elif cin == 1 and not pastel:
+        print("Sin pastel :(")
+    elif cin == 0:
+        print("Sin pastel :(")
+        break
+    else:
+        print("El valor de cin debe ser 0 o 1")
+print("Fin del programa")
+eturn 0;
+}
+
+Ejercicio 10
+#include <iostream>
+using namespace std;
+
+int main()
+{
+income = 0
+expenses = 0
+
+while True:
+    cin = input("Ingrese ingresos o gastos ('0' para salir): ")
+    if cin == '0':
+        break
+    cin = int(cin)
+    if cin < 0:
+        continue
+    if cin > 0:
+        income += cin
+    else:
+        expenses -= cin
+
+net_profit = income - expenses
+print("Beneficio neto: ", net_profit)
+  return 0;
+}
+
+
+Ejercicio 11
+#include <iostream>
+using namespace std;
+
+int main()
+{
+entrada = input()
+base, exponente = map(int, entrada.split())
+resultado = base ** exponente
+print(resultado)
+ return 0;
+}
+
+
+Ejercicio 12
+#include <iostream>
+using namespace std;
+
+int main()
+{
+#include <iostream>
+#include <limits>
+#include <chrono>
+
+using namespace std;
+using namespace std::chrono;
+
+int main() {
+    long long num;
+    cout << "Ingrese un numero no negativo: ";
+    cin >> num;
+
+    if (num < 0) {
+        cout << "Error: Numero negativo ingresado. Intente de nuevo." << endl;
+        return 1;
+    }
+
+    if (num > 20) {
+        cout << "Advertencia: El calculo del factorial puede tardar mucho tiempo con numeros grandes." << endl;
+        cout << "Intente con un numero menor o igual a 20." << endl;
+        return 1;
+    }
+
+    long long factorial = 1;
+
+    auto start = high_resolution_clock::now();
+
+    for (int i = 2; i <= num; i++) {
+        factorial *= i;
+    }
+
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<microseconds>(stop - start);
+
+    cout << "El factorial de " << num << " es " << factorial << "." << endl;
+    cout << "Tiempo de calculo: " << duration.count() << " microsegundos." << endl;
+
+    return 0;
+}
