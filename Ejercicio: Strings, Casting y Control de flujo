@@ -16,3 +16,289 @@ public class SumaEntera {
         System.out.println("La parte entera de la suma es: " + sumaEntera);
     }
 }
+
+
+Ejercicio 2
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+cociente = num1 / num2
+
+print("El cociente es:", cociente)
+
+ return 0;
+}
+
+
+Ejercicio 3 
+#include <iostream>
+while True:
+    try:
+        ancho = int(input("Ingrese el ancho del rectángulo: "))
+        alto = int(input("Ingrese el alto del rectángulo: "))
+        break
+    except ValueError:
+        print("Error: Por favor, ingrese un valor numérico entero.")
+
+area = ancho * alto
+print("El área del rectángulo es:", area)
+
+ return 0;
+}
+
+
+Ejercicio 4
+x = int(input("Enter the first integer: "))
+y = int(input("Enter the second integer: "))
+z = 1
+answer = x + y + z
+print("Your answer: {}".format(answer))
+
+ return 0;
+}
+
+
+Ejercicio 5
+#include <iostream>
+using namespace std;
+int main() {
+int x, y;
+cin >> x >> y;
+cout << x + y;
+}
+
+ return 0;
+}
+
+Ejercicio 6
+#include <iostream>
+using namespace std;
+int main() {
+nombre_completo = input("Ingrese su nombre y apellido separados por un espacio: ")
+apellido, nombre = nombre_completo.split()
+
+nombre_formateado = apellido + ", " + nombre
+
+print("Su nombre completo es:", nombre_formateado)
+
+ return 0;
+}
+
+Ejercicio 7
+#include <iostream>
+using namespace std;
+int main() {
+# Leer los títulos de los libros
+titulo1 = input("Ingrese el título del primer libro: ")
+titulo2 = input("Ingrese el título del segundo libro: ")
+titulo3 = input("Ingrese el título del tercer libro: ")
+
+# Imprimir los títulos en orden inverso
+print("Títulos en orden inverso:")
+print(titulo3)
+print(titulo2)
+print(titulo1)
+# Leer los títulos de los libros como una sola entrada de varias líneas
+titulos = input("Ingrese los títulos de los tres libros separados por una nueva línea:\n")
+
+# Dividir la entrada en títulos separados
+titulo1, titulo2, titulo3 = titulos.split("\n")
+
+# Imprimir los títulos en orden inverso
+print("Títulos en orden inverso:")
+print(titulo3)
+print(titulo2)
+print(titulo1)
+
+ return 0;
+}
+
+
+Ejercicio 8
+#include <iostream>
+using namespace std;
+int main() {
+# Leer las cinco palabras de la entrada estándar
+palabras = input("Ingrese cinco palabras separadas por un espacio: ")
+
+# Dividir las palabras en una lista
+lista_palabras = palabras.split()
+
+# Imprimir el primer caracter de cada palabra
+for palabra in lista_palabras:
+    print(palabra[0])
+
+ return 0;
+}
+
+
+Ejercicio 9
+#include <iostream>
+using namespace std;
+int main() {
+# Leer dos enteros no negativos separados por un espacio
+a, b = map(int, input("Ingrese dos enteros no negativos separados por un espacio: ").split())
+
+# Calcular la suma de a y b
+suma = a + b
+
+# Calcular el número de dígitos en la notación decimal de la suma
+num_digitos = len(str(suma))
+
+# Calcular el producto de la suma por el número de dígitos
+producto = suma * num_digitos
+
+# Imprimir el resultado
+print("El producto de la suma por el número de dígitos en su notación decimal es:", producto)
+
+ return 0;
+}
+
+Ejercicio 10
+#include <iostream>
+using namespace std;
+int main() {
+# Leer el número de documentos
+num_documentos = int(input("Ingrese el número de documentos: "))
+
+# Formar la cadena de respuesta
+respuesta = str(num_documentos) + " documentos encontrados."
+
+# Imprimir la cadena en su totalidad
+print(respuesta)
+
+ return 0;
+}
+
+
+Ejercicio 11
+#include <iostream>
+using namespace std;
+# Definir la función para verificar si un número está en la secuencia de Fibonacci
+def es_fibonacci(num):
+    # Inicializar los primeros dos números de Fibonacci
+    a, b = 0, 1
+    while b < num:
+        # Actualizar los números de Fibonacci
+        a, b = b, a + b
+    # Verificar si el número dado es parte de la secuencia de Fibonacci
+    return b == num
+
+# Leer el código del collar como un entero
+codigo_collar = int("11235813")
+
+# Verificar si el código del collar pertenece a la secuencia de Fibonacci
+if es_fibonacci(codigo_collar):
+    print("El código del collar pertenece a Fibo.")
+else:
+    print("El código del collar no pertenece a Fibo.")
+
+return 0;
+}
+
+Ejercicio 12
+#include <iostream>
+using namespace std;
+A = 1000  # el costo a partir del cual se aplica el descuento X
+X = 10  # el porcentaje de descuento para el rango A
+B = 2000  # el costo a partir del cual se aplica el descuento Y
+Y = 20  # el porcentaje de descuento adicional para el rango B
+
+costo_original = float(input("Ingrese el costo original del teléfono (en bolivianos): "))
+
+descuento = 0
+
+if costo_original > A:
+    descuento += X
+if costo_original > B:
+    descuento += Y
+
+costo_descuento = costo_original * (1 - descuento/100)
+
+print(f"Costo original: {costo_original} bolivianos")
+print(f"Descuento aplicado: {descuento}%")
+print(f"Costo con descuento: {costo_descuento} bolivianos")
+return 0;
+}
+
+
+Ejercicio 13
+#include <iostream>
+using namespace std;
+num_documentos = int(input("Ingrese el número de documentos: "))
+if num_documentos == 0:
+    print("No se encontraron documentos")
+elif num_documentos == 1:
+    print("1 documento encontrado")
+else:
+    print(num_documentos, "documentos encontrados")
+ return 0;
+}
+
+
+Ejercicio 14
+#include <iostream>
+using namespace std;
+# leer la entrada
+casa1_color, casa1_pisos = input().split()
+casa2_color, casa2_pisos = input().split()
+casa3_color, casa3_pisos = input().split()
+transeunte_color, transeunte_pisos = input().split()
+
+# verificar qué información tiene el transeúnte
+if transeunte_color == casa1_color:
+    casa_encontrada = 1
+    if transeunte_pisos == casa1_pisos:
+        # el transeúnte proporcionó información completa
+        print(1)
+elif transeunte_color == casa2_color:
+    casa_encontrada = 2
+    if transeunte_pisos == casa2_pisos:
+        # el transeúnte proporcionó información completa
+        print(2)
+elif transeunte_color == casa3_color:
+    casa_encontrada = 3
+    if transeunte_pisos == casa3_pisos:
+        # el transeúnte proporcionó información completa
+        print(3)
+
+# mostrar los números de las casas que Martha necesita visitar
+if casa_encontrada == 1:
+    if casa2_pisos != "-1":
+        print(2)
+   
+return 0;
+}
+
+Ejercicio 15
+#include <iostream>
+using namespace std;
+caracter = input("Introduzca un caracter: ")
+if caracter.isupper():
+    print("El caracter está en mayúsculas")
+elif caracter.islower():
+    print("El caracter está en minúsculas")
+else:
+    print("El caracter no es una letra")
+  return 0;
+}
+
+
+Ejercicio 16
+#include <iostream>
+using namespace std;
+edad = int(input("Ingrese la edad del candidato: "))
+experiencia = int(input("Ingrese los años de experiencia del candidato: "))
+
+if edad < 18:
+    print("El candidato es demasiado joven para postularse a cualquier puesto.")
+elif experiencia < 3:
+    print("El candidato puede postularse al puesto de coordinador de proyecto.")
+elif experiencia < 5:
+    print("El candidato puede postularse al puesto de director de proyecto.")
+else:
+    print("El candidato puede postularse al puesto de director de proyecto senior.")
+ return 0;
+}
+
+
