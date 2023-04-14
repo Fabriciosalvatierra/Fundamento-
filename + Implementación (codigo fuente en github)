@@ -1,0 +1,24 @@
+Inicio
+|
++---> Pedir tamaño de la población (N)
+|
++---> Pedir nivel de confianza (z)
+|
++---> Pedir proporción poblacional (p)
+|
++---> Calcular la proporción complementaria (q) como q = 1 - p
+|
++---> Pedir margen de error (e)
+|
++---> Calcular tamaño de la muestra (n) usando la fórmula:
+|      n = N * z^2 * p * q / ((N - 1) * e^2 + z^2 * p * q)
+|
++---> Mostrar resultado del tamaño de la muestra (n)
+|
++---> Preguntar si desea realizar otro cálculo
+|
++---> Si la respuesta es Sí, regresar al paso 1
+|
++---> Si la respuesta es No, terminar el programa
+|
+Fin
